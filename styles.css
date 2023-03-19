@@ -1,0 +1,330 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+*{scroll-behavior: smooth;}
+
+#name-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: white;
+}
+
+#text-container {
+    margin: auto;
+    width: 40%;
+}
+
+#name-text {
+    font-size: 3.5rem;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+#roberto-text {
+    font-size: 3.5rem;
+    color: #02aab0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+#learn-container {
+    width: 200px;
+    text-align: center;
+    border: 2px solid #02aab0;
+    padding: 5px;
+    margin-top: 40px;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #02aab0;
+    background: linear-gradient(to right, #02aab0 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .1s ease-out;
+}
+
+#learn-container:hover {
+    color: white;
+    background-position: left bottom;
+    cursor: pointer;
+}
+
+@keyframes left-to-right {
+    from {transform: translateX(-80px); opacity: 0;}
+    to {transform: translateX(0px); opacity: 1;}
+}
+
+#about {
+    background-color: #02aab0;
+    background-image: linear-gradient(135deg,#02aab0,#00cdac);
+    height: 100%;
+    clip-path: polygon(0 0,100% 0,100% 80%,0 100%);
+    padding-bottom: 10%;
+}
+
+#about-container {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+#about-me-text {
+    margin: 0 0 4.5rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#about-me-picture-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about-me-pic {
+    width: 375px;
+    height: 500px;
+    box-shadow: 5px 10px 10px #888888;
+}
+
+#description-container {
+    width: 600px;
+    margin-left: 150px;
+}
+
+#description-text {
+    font-size: 1.2rem;
+    text-align: left;
+    color: white;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+#projects {
+    height: 100%;
+    margin-top: 10px;
+}
+
+#projects-text {
+    color: black;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+#projects-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+#projects-text-container {
+    width: 400px;
+}
+
+#projects-title {
+    font-size: 2rem;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+#projects-description {
+    font-size: 1.1rem;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 1.6rem;
+}
+
+#projects-pic {
+    width: 600px;
+    height: 350px;
+    margin-left: 80px;
+    box-shadow: 5px 10px 10px #888888;
+}
+
+#visit-container {
+    display: flex;
+    margin-top: 30px;
+}
+
+#visit-site {
+    width: 100px;
+    text-align: center;
+    border: 2px solid #00cdac;
+    padding: 8px;
+    font-size: 1.1rem;
+    color: #00cdac;
+    background: linear-gradient(to right, #00cdac 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .1s ease-out;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#visit-site:hover {
+    color: white;
+    background-position: left bottom;
+    cursor: pointer;
+}
+
+#source-code-text {
+    font-size: 1.1rem;
+    color: #00cdac;
+    padding: 8px;
+    margin-left: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#contact {
+    background-image: linear-gradient(135deg,#02aab0,#00cdac);
+    -webkit-clip-path: polygon(0 15vh,100% 0,100% 100%,0 100%);
+    clip-path: polygon(0 15vh,100% 0,100% 100%,0 100%);
+    padding: 15rem 0 6rem;
+    margin-bottom: -1px;
+    color: #fff;
+}
+
+#contact-title {
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: -80px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+#contact-text {
+    color: white;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 45px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+#contact-email {
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+}
+
+#contact-email-text {
+    width: 450px;
+    border: 2px solid white;
+    padding: 10px 60px;
+    font-size: 1.6rem;
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    background: linear-gradient(to right, white 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .1s ease-out;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#contact-email-text:hover {
+    color: #00cdac;
+    background-position: left bottom;
+}
+
+#contact-phone {
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#contact-phone-text {
+    width: 450px;
+    border: 2px solid white;
+    padding: 10px 60px;
+    font-size: 1.6rem;
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    background: linear-gradient(to right, white 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .1s ease-out;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+#contact-phone-text:hover {
+    color: #00cdac;
+    background-position: left bottom;
+    cursor: pointer;
+}
+
+#footer {
+    background-color: #333;
+    height: 225px;
+}
+
+#up-arrow-container {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#up-arrow {
+    color: white;
+    font-size: 1.4rem;
+}
+
+#up-arrow:hover {
+    transform: translateY(-3px);
+    transition: all .1s ease-out;
+    cursor: pointer;
+}
+
+#social-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#linked-in {
+    font-size: 1.8rem;
+    margin-right: 50px;
+    transition: all .1s ease-out;
+}
+
+#linked-in:hover {
+    transform: translateY(-3px);
+    transition: all .1s ease-out;
+    cursor: pointer;
+}
+
+#git-hub {
+    font-size: 1.8rem;
+}
+
+#git-hub:hover {
+    transform: translateY(-3px);
+    transition: all .1s ease-out;
+    cursor: pointer;
+}
